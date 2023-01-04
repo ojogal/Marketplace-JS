@@ -1,8 +1,16 @@
 import express from 'express';
 import sequelize from './db.js';
+import models from './models/models.js';
+import cors from 'cors';
 
 const app = express();
 const PORT = process.env.PORT || 4001;
+app.use(cors());
+app.use(express.json());
+
+app.get('/', (req, res) => {
+  res.json('it works')
+});
 
 const start = async () => {
   try {
