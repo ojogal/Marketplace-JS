@@ -3,7 +3,8 @@ import ApiError from '../error/apiError.js';
 
 class DeviceController {
   async index(req, res) {
-
+    const { name, price, brandId, typeId, info } = req.body;
+    const { img } = req.files;
   };
 
   async show(req, res) {
