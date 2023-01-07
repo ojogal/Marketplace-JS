@@ -1,3 +1,6 @@
+import { Device } from '../models/models.js';
+import ApiError from '../error/apiError.js';
+
 class DeviceController {
   async index(req, res) {
 
