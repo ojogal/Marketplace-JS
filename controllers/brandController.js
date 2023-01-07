@@ -1,4 +1,4 @@
-import { Brand } from '../models/models.js';
+import Brand from '../models/models.js';
 import ApiError from '../error/apiError.js';
 
 class BrandController {

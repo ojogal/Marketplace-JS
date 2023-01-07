@@ -1,5 +1,6 @@
-import { Device } from '../models/models.js';
+import Device from '../models/models.js';
 import ApiError from '../error/apiError.js';
+import { UUID } from 'sequelize';
 
 class DeviceController {
   async index(req, res) {
