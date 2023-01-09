@@ -1,4 +1,5 @@
-import { Device, DeviceInfo } from '../models/models.js';
+import Device from '../models/models.js';
+import DeviceInfo from '../models/models.js';
 import ApiError from '../error/apiError.js';
 import { UUID } from 'sequelize';
 import path from 'path';

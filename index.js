@@ -4,8 +4,12 @@ import models from './models/models.js';
 import cors from 'cors';
 import fileUpload from 'express-fileupload';
 import path from 'path';
+import { fileURLToPath } from 'url';
 import router from './routes/index.js';
 import errorHandle from './middleware/errorHandle.js';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const app = express();
 const PORT = process.env.PORT || 4001;
